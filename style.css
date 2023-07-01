@@ -1,0 +1,101 @@
+@font-face {
+	font-family: "emel";
+	src: url("fonts/ml.ttf");
+}			 
+@font-face {
+	font-family: "disc";
+	src: url("fonts/disc.otf");
+}
+
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "disc", sans-serif;
+}
+
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	flex-direction: column;
+	background: 
+		linear-gradient( 180deg, hsla(211, 33%, 17%, 0.90), hsla(211, 33%, 17%, 0.60)),
+		url("num2.jpg") no-repeat center center fixed;
+	background-size: cover;
+}
+
+h1 {
+	color: #fff;
+	font-family: "disc";
+}
+
+.calculator {
+  width: 40%;
+  margin: 0 auto;
+  padding: 10px;
+  background: none;
+  border: 1px solid #999;
+  border-radius: 5px;
+}
+
+#result {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 5px;
+  font-size: 24px;
+  color: #fff;
+  text-align: right;
+  background-color: #666;
+  border: none;
+  border-radius: 3px;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 5px;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  font-size: 18px;
+  color: #fff;
+  background: none;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  
+}
+
+button:hover {
+  background-color: #555;
+}
+
+button:active {
+  background-color: #111;
+}
+
+button.clear {
+  background-color: #3F4E4F;
+}
+
+button.equals {
+  grid-column: span 3;
+}
+
+footer {
+	text-align: right;
+	margin-right: 10px;
+	color: white;
+	font-size: 12px;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	position: absolute;
+	padding: 10px;
+	
+}
